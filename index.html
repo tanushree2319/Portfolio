@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .active-link {
+            color: #6b7280;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">My Portfolio</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Home</a></li>
+                    <li><a href="#projects" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Projects</a></li>
+                    <li><a href="#about" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">About</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-gray-600 focus:outline-none" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-white w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-gray-600 focus:outline-none" aria-label="Close Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="mobile-nav-link text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Home</a></li>
+                    <li><a href="#projects" class="mobile-nav-link text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Projects</a></li>
+                    <li><a href="#about" class="mobile-nav-link text-gray-600 hover:text-blue-600 transition duration-300 text-lg">About</a></li>
+                    <li><a href="#contact" class="mobile-nav-link text-gray-600 hover:text-blue-600 transition duration-300 text-lg">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="home" class="mb-16">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-4">Hello, I'm Tanushree</h1>
+                    <p class="text-gray-600 mb-6">A front-end developer eager to create engaging and user-friendly web experiences.</p>
+                    <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300 inline-block">View My Work</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="Portfolio Pic.jpg" alt="Tanushree" class="rounded-full shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Lume & Aura</h3>
+                    <p class="text-gray-600 mb-4">Landing page for a fictional candle brand, showcasing a clean design and user-friendly experience.The project focuses on creating a visually soothing and responsive interface.</p>
+                    <a href="https://github.com/tanushree2319/Portfolio-Projects" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-500 hover:text-blue-700 transition duration-300">
+                        View Code
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H10.5A4.5 4.5 0 0 0 6 10.5v6A4.5 0 0 0 10.5 21h3a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 0 0 0 13.5 6zM15.75 10.5H16.5a.75.75 0 0 1 .75.75v.75a.75 0 0 1-.75.75h-.75a.75.75 0 0 1-.75-.75v-.75a.75 0 0 1 .75-.75z" />
+                        </svg>
+                    </a>
+                    <div class="mt-2">
+                        <a href="https://tanushree2319.github.io/Portfolio-Projects/" target="_blank" rel="noopener noreferrer" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                            See Site
+                        </a>
+                    </div>
+                    <div class="mt-4" style="position: relative; overflow: hidden; padding-top: 56.25%; /* 16:9 aspect ratio */">
+                        <iframe src="https://www.loom.com/embed/7b3708259cef4e08866100d3f718e52d?sid=b697234c-0e4d-44c9-9616-021dd0567b5d"
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">WanderLens</h3>
+                    <p class="text-gray-600 mb-4">WanderLens is a visually immersive website featuring a sleek sidebar navigation and dynamic layout, the site offers a seamless user experience.</p><br>
+                    <a href="https://github.com/tanushree2319/WanderLens" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-500 hover:text-blue-700 transition duration-300">
+                        View Code
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H10.5A4.5 4.5 0 0 0 6 10.5v6A4.5 0 0 0 10.5 21h3a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 0 0 0 13.5 6zM15.75 10.5H16.5a.75.75 0 0 1 .75.75v.75a.75 0 0 1-.75.75h-.75a.75 0 0 1-.75-.75v-.75a.75 0 0 1 .75-.75z" />
+                        </svg>
+                    </a>
+                    <div class="mt-2">
+                        <a href="https://tanushree2319.github.io/WanderLens/" target="_blank" rel="noopener noreferrer" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                            See Site
+                        </a>
+                    </div>
+                    <div class="mt-4" style="position: relative; overflow: hidden; padding-top: 56.25%; /* 16:9 aspect ratio */">
+                        <iframe src="https://www.loom.com/embed/304f95ceed1a4e67b903f63ed686206e?sid=e68f6ed4-9490-40bd-ba67-dbea050a9ca0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">LushBerry</h3>
+                    <p class="text-gray-600 mb-4">A nature-inspired website built to showcase the freshness and joy of strawberries.This project features playful typography, soft textures, and a clean layout to evoke a sense of natural delight and simplicity.</p>
+                    <a href="https://github.com/tanushree2319/LushBerry/tree/main" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-500 hover:text-blue-700 transition duration-300">
+                        View Code
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H10.5A4.5 4.5 0 0 0 6 10.5v6A4.5 0 0 0 10.5 21h3a4.5 4.5 0 0 0 4.5-4.5v-6A4.5 0 0 0 13.5 6zM15.75 10.5H16.5a.75.75 0 0 1 .75.75v.75a.75 0 0 1-.75.75h-.75a.75 0 0 1-.75-.75v-.75a.75 0 0 1 .75-.75z" />
+                        </svg>
+                    </a>
+                    <div class="mt-2">
+                        <a href="https://tanushree2319.github.io/LushBerry/" target="_blank" rel="noopener noreferrer" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">
+                            See Site
+                        </a>
+                    <div class="mt-4" style="position: relative; overflow: hidden; padding-top: 56.25%; /* 16:9 aspect ratio */">
+                        <iframe src="https://www.loom.com/embed/8260faa22c3342c79c0174755996f332?sid=e04cd294-b7fb-483e-96a6-b158bcce038a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">About Me</h2>
+            <div class="flex flex-col items-center">
+                <div class="md:w-3/4">
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        I’m a front-end developer passionate about creating websites that are both functional and pleasant to use. With a foundation in HTML, CSS, JavaScript, and Bootstrap, I focus on building responsive layouts that work seamlessly across devices.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        I’m exploring UI/UX design to better understand user interaction and how small details can improve the experience. I believe functionality and creativity go hand in hand — thoughtful structure paired with clean, balanced design is my goal.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                        I’m eager to continue learning and contributing to impactful web projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+                                <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Contact Me</h2>
+                                <div class="bg-white rounded-lg shadow-md p-8">
+                                  <p class="text-gray-600 text-center mb-6">
+                                    Feel free to reach out to me via email or connect with me on LinkedIn.
+                                  </p>
+                                  <div class="flex justify-center space-x-6">
+                                    <!-- Email Icon -->
+                                    <a href="mailto:tanushreepal3552@gmail.com" class="text-blue-500 hover:text-blue-700 transition duration-300" title="Email Me">
+                                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                        <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67z" />
+                                        <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908z" />
+                                      </svg>
+                                    </a>
+                              
+                                    <!-- LinkedIn Icon -->
+                                    <a href="https://www.linkedin.com/in/tanushree-pal-044556356/" target="_blank" class="text-blue-500 hover:text-blue-700 transition duration-300" title="Connect on LinkedIn">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" class="w-6 h-6">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.473 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175A1.17 1.17 0 0 1 0 14.854V1.146zM4.943 12.306V6.169H2.542v6.137h2.401zM3.743 5.168c.837 0 1.356-.554 1.356-1.247-.015-.708-.519-1.247-1.341-1.247-.822 0-1.356.539-1.356 1.247 0 .693.519 1.247 1.326 1.247h.015zm4.911 7.138h2.4V8.906c0-.183.013-.367.067-.498.147-.367.482-.747 1.045-.747.738 0 1.033.564 1.033 1.39v3.255h2.4V8.807c0-2.28-1.215-3.34-2.838-3.34-1.312 0-1.888.726-2.213 1.235h.03v-1.06h-2.4c.03.685 0 6.137 0 6.137z"/>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+            </section>
+                              
